@@ -1,26 +1,39 @@
-## 🔍 What I Did
+# 📊 Lab 4 - Analyze Data in a Lake Database
 
-### 📌 1. Created Lake Database and Tables
+> [Lab 4 Talimatları](https://github.com/secedit/dp-203-azure-data-engineer/blob/master/Instructions/Labs/04-Create-a-Lake-Database.md)
 
-- Created a new **Lake Database** named `RetailDB`.
-- Defined tables: `Customer`, `Product`, and `SalesOrder`.
-- Designed relationships between tables using primary and foreign keys.
-- ![Lake DB Tables](tablo.PNG)
+## 🛠️ What I Did
 
-### 📌 2. Uploaded CSV Files to Data Lake
+### 1. Created a Lake Database
+- Created a **Lake Database** called `RetailDB`.
+- Defined three tables: `Customer`, `Product`, and `SalesOrder`.
+- Set up relationships between tables using **Lake Database Designer**.
+- Specified the input folder from Azure Data Lake and data format (Delimited Text).
+- 📸 *Screenshot:* `tablo.PNG`
 
-- Uploaded CSV files (e.g., `customer.csv`) to the Azure Data Lake under `RetailDB` folder.
-- Verified file structure and size.
-- ![CSV Upload](csvuplaod.PNG)
+### 2. Uploaded Data to Data Lake
+- Uploaded a `.csv` file (`customer.csv`) to the Azure Data Lake using the workspace storage.
+- 📸 *Screenshot:* `csvuplaod.PNG`
 
-### 📌 3. Queried CSV Data with Serverless SQL
+### 3. Queried CSV File with SQL Script
+- Queried the uploaded `customer.csv` file using SQL in **Synapse Studio**.
+- Verified the uploaded data with a basic `SELECT` query.
+- 📸 *Screenshot:* `csvsql.PNG`
 
-- Queried the uploaded CSV using **OPENROWSET** with format and schema parameters.
-- Previewed and validated raw data from CSV.
-- ![Query CSV](csvsql.PNG)
+### 4. Queried Lake Database Table
+- Ran a SQL query to fetch customer data from the `Customer` table in the Lake Database.
+- Viewed results in tabular format to validate the schema and data.
+- 📸 *Screenshot:* `sql.PNG`
 
-### 📌 4. Queried Tables from Lake Database
+### 5. Additional Query and Validation
+- Executed an extended SQL script to check column mappings and data types.
+- 📸 *Screenshot:* `sql2.PNG`
+- 📸 *Screenshot:* `tablo.PNG`
 
-- Executed SQL queries directly on the `Customer` table from the Lake DB.
-- Verified customer data retrieval worked as expected.
-- ![Lake Table Query](sql2.PNG)
+---
+
+✅ **Completed** Lab 4 successfully and learned how to:
+- Create lake database and define schema
+- Link Azure Data Lake storage
+- Query structured data using Synapse SQL
+
