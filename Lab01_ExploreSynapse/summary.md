@@ -20,7 +20,7 @@ In this lab, I explored how to query and analyze data in a data lake using both 
 
 ### 3. Aggregated Data with GroupBy Queries
 - Used SQL to group products and summarize data with `GROUP BY` and `COUNT()` functions.
--  ![GroupBy Result](./by_group.PNG)
+-  ![GroupBy Result](./by%20group.PNG)
 ---
 
 ## 🧠 Why It Matters
