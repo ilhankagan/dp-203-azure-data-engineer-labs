@@ -10,7 +10,7 @@
 - Created a **Parquet file format** using `SnappyCodec` compression.
 
 📸 *Screenshot:*  
-![External Data Source](external_datasource.PNG)
+![External Data Source](external%20datasource.PNG)
 
 ---
 
