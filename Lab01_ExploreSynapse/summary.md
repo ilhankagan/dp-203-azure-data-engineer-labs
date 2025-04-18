@@ -10,17 +10,17 @@ In this lab, I explored how to query and analyze data in a data lake using both 
 - Used **OPENROWSET** to read external data from CSV files stored in Azure Data Lake.
 - Wrote a SQL query to select the top 100 rows from the dataset.
 - Created a **line chart** and a **column chart** in Synapse Studio to visualize product pricing data.
-- 📸 ![SQL Query and Line Chart](./sql.PNG)
+-  ![SQL Query and Line Chart](./sql.PNG)
 
 ### 2. Analyzed Data with PySpark
 - Used PySpark inside a Synapse notebook to read the same dataset.
 - Filtered and grouped the data by product categories using Spark DataFrame methods.
 - Counted product frequency and visualized it using Spark-compatible charting tools.
-- 📸 ![PySpark Notebook Result](./pyspark.PNG)
+-  ![PySpark Notebook Result](./pyspark.PNG)
 
 ### 3. Aggregated Data with GroupBy Queries
 - Used SQL to group products and summarize data with `GROUP BY` and `COUNT()` functions.
-- 📸 ![GroupBy Chart](./by_group.PNG)
+-  ![GroupBy Result](./by_group.PNG)
 ---
 
 ## 🧠 Why It Matters
