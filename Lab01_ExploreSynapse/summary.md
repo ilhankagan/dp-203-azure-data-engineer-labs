@@ -10,7 +10,7 @@ In this lab, I explored how to query and analyze data in a data lake using both 
 - Used **OPENROWSET** to read external data from CSV files stored in Azure Data Lake.
 - Wrote a SQL query to select the top 100 rows from the dataset.
 - Created a **line chart** and a **column chart** in Synapse Studio to visualize product pricing data.
-- 📸 *Screenshot:* (./SQL.PNG)
+- 📸 ![SQL Query Chart](./SQL.PNG)
 
 ### 2. Analyzed Data with PySpark
 - Used PySpark inside a Synapse notebook to read the same dataset.
