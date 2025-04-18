@@ -13,7 +13,8 @@ This lab focuses on querying and analyzing structured data using Serverless SQL 
 - Previewed data from the raw files in tabular form.
 
 📷 *Screenshot:*  
-![CSV Query](./CSV_sql_sorgu.PNG)
+![CSV Query](./CSV%20sql%20sorgu.PNG)
+
 
 ---
 
