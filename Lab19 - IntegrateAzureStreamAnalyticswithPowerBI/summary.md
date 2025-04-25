@@ -1,78 +1,43 @@
-# Lab 19 - Integrate Azure Stream Analytics with Power BI
+# 🚀 Lab 19 - Integrate Azure Stream Analytics with Power BI
 
-## 🧠 Objective
-In this lab, I integrated **Azure Stream Analytics** with **Power BI** to visualize real-time streaming data from **Event Hub**.
+> [Lab 19 Instructions]([https://github.com/MicrosoftLearning/dp-203-azure-data-engineer/blob/master/Instructions/Labs/19-Integrate-Azure-Stream-Analytics-with-Power-BI.md](https://github.com/secedit/dp-203-azure-data-engineer/blob/master/Instructions/Labs/19-Stream-Power-BI.md))
 
----
+## 🛠️ What I Did
 
-## ⚙️ Key Steps
+### 1. Created and Deployed Stream Analytics Job
+- Deployed a **Stream Analytics Job** named `StreamAnalyticsJob`.
+- Resource group and job name were confirmed after successful deployment.
+- ✔ Deployment status: `OK`
+- 📸 *Screenshot:* `streamdeployment.PNG`
 
-### 1. **Deploying Azure Stream Analytics Job**
-I created a new Stream Analytics Job named `stream-orders`. This job reads events from Event Hub and outputs them to a Power BI dataset.
+### 2. Configured Event Hub Input
+- Added input from an **Event Hub** named `orders`.
+- Confirmed `Source type` as **Stream** and `Type` as **Event Hub**.
+- 📸 *Screenshot:* `inputadd.PNG`
 
-📸 ![Stream Analytics Deployment](images/lab19/streamdeployment.PNG)
+### 3. Configured Power BI Output
+- Configured **Power BI** as output under alias `powerbi-dataset`.
+- Used **User token** as authentication mode.
+- 📸 *Screenshot:* `outputadd.PNG`
 
----
+### 4. Connected to Power BI Workspace
+- Verified new dataset `realtime-data` and dashboard `Order Tracking` appeared under the correct workspace.
+- 📸 *Screenshot:* `powerBıwspace.PNG`
 
-### 2. **Adding Input: Event Hub**
-Configured `orders` input as **Stream type** from an Event Hub instance to stream incoming event data into the job.
+### 5. Created Realtime Visualization in Power BI
+- Created a Power BI chart showing **real-time order count** by end time.
+- Dashboard updated in real time as new events were streamed.
+- 📸 *Screenshot:* `powerBIvis.PNG`
 
-📸 ![Input Setup](images/lab19/inputadd.PNG)
-
----
-
-### 3. **Adding Output: Power BI**
-Configured the output to **Power BI** with alias `powerbi-dataset` using **user token** for authentication.
-
-📸 ![Output Setup](images/lab19/outputadd.PNG)
-
----
-
-### 4. **Power BI Dataset Verification**
-The streaming dataset `realtime-data` appeared in the Power BI workspace `mslearn-streaming`.
-
-📸 ![Power BI Streaming Dataset](images/lab19/powerBI.PNG)
-
----
-
-### 5. **Realtime Dashboard Creation**
-Built a live dashboard named `Order Tracking` to monitor real-time order counts using the `ENDTIME` field.
-
-📸 ![Power BI Dashboard](images/lab19/powerBIvis.PNG)
+### 6. Final Workspace Overview
+- Reviewed all workspace components under `mslearn-streaming`, including dashboards and datasets.
+- 📸 *Screenshot:* `powerBI.PNG`
 
 ---
 
-### 6. **Power BI Workspace Overview**
-Confirmed the availability of both the dataset and the dashboard inside the workspace.
+✅ **Completed** Lab 19 successfully and gained experience in:
+- Integrating Azure Stream Analytics with Power BI
+- Streaming data pipeline configuration
+- Visualizing real-time data in Power BI dashboards
 
-📸 ![Power BI Workspace](images/lab19/powerBıwspace.PNG)
-
----
-
-## ✅ Skills Practiced
-
-- Azure Stream Analytics job creation
-- Configuring Event Hub as a stream input
-- Streaming output to Power BI
-- Real-time dashboard creation
-
----
-
-## 🧩 Technologies Used
-
-| Service               | Description                                  |
-|-----------------------|----------------------------------------------|
-| Azure Stream Analytics| Real-time data processing                    |
-| Azure Event Hub       | Ingesting event streams                      |
-| Power BI              | Visualization of live streaming data        |
-
----
-
-## 📌 Notes
-
-> ⚠️ Stream Analytics Power BI output will be deprecated on **October 31, 2027**. Consider alternate output sinks for long-term projects.
-
----
-
-## 📁 Folder Structure
 
